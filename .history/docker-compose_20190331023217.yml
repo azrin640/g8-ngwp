@@ -1,0 +1,9 @@
+version: "3"
+services:
+
+  ngwp-ng:
+    image: nginx
+    networks: 
+      - frontend
+    volumes:
+      - "/home/azrin/project/ngwp/ngwp-ng/dist/ngwp-ng:/usr/"
