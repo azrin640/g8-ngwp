@@ -1,9 +1,0 @@
-version: "3"
-services:
-
-  ngwp-ng:
-    image: nginx
-    networks: 
-      - frontend
-    volumes:
-      - 

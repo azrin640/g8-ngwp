@@ -6,7 +6,7 @@ services:
     networks: 
       - frontend
     volumes:
-      - /home/azrin/project/ngwp/ngwp-ng/dist/ngwp-ng:/usr/share/nginx/html
+      - /home/azrin/project/g8/ngwp/ngwp-ng/dist/ngwp-ng:/usr/share/nginx/html
     ports: 
       - "80:80"
   
@@ -17,28 +17,28 @@ services:
     depends_on:
       - ngwp-mysql
     volumes: 
-       - /home/azrin/project/ngwp/ngwp-wp:/var/www/html
+       - /home/azrin/project/g8/ngwp/ngwp-wp:/var/www/html
     restart: always
     ports: 
       - "8000:80"  
     environment:
       WORDPRESS_DB_HOST: ngwp-mysql:3306
-      WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: wordpress
-      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wp_user
+      WORDPRESS_DB_PASSWORD: Engine1@
+      WORDPRESS_DB_NAME: wp_db
   
   ngwp-mysql:
     image: mysql:5.7
     volumes: 
-      - /home/azrin/project/ngwp/ngwp-mysql:/var/lib/mysql
+      - /home/azrin/project/g8/ngwp/ngwp-mysql:/var/lib/mysql
     networks: 
       - backend
     restart: always    
     environment:
-      MYSQL_ROOT_PASSWORD: somewordpress
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: gouk560      
+      MYSQL_USER: wp_user
+      MYSQL_PASSWORD: Engine1@
+      MYSQL_DATABASE: wp_db
 
 networks:
   frontend:
