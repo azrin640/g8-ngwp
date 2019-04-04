@@ -61,4 +61,6 @@ Navigate to /opt/ngwp and run docker compose
 
 Now u can navigate to your server ip or domain, nginx will be running at domain:80, wordpress at domain:8000
 
-Enjoy ...
+Enjoy ...# g8-ngwp
+# g8-ngwp
+# g8-ngwp
