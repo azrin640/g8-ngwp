@@ -1,0 +1,16 @@
+.footer{
+    height: 40vh;
+    background: rgb(150,207,241);
+    background: linear-gradient(90deg, rgba(150,207,241,1) 0%, rgba(250,246,166,1) 42%, rgba(247,179,208,1) 100%);
+
+    &__notes{
+        float: right;
+        padding-right: 10px;
+    }
+
+    &__social-image{
+        margin-top: 30vh;
+        padding: 10px;
+        width: 50px;
+    }
+}

@@ -1,0 +1,92 @@
+.banner{
+
+    &__image{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.design{
+    
+    padding-bottom: 10vh;
+    
+    &__title{
+        color: #E8308F;
+        padding-top: 10vh;
+        
+    }
+
+    &__item{
+        margin: 10px;
+        width: 150px;
+        height: auto;
+        -webkit-box-shadow: 9px 13px 8px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 9px 13px 8px -6px rgba(0,0,0,0.75);
+        box-shadow: 9px 13px 8px -6px rgba(0,0,0,0.75);
+        border-radius: 20px;
+    }
+
+    &__item2{
+        margin: 10px;
+        width: 300px;
+        height: auto;
+        -webkit-box-shadow: 9px 13px 8px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 9px 13px 8px -6px rgba(0,0,0,0.75);
+        box-shadow: 9px 13px 8px -6px rgba(0,0,0,0.75);
+    }
+}
+
+.design__item:hover {
+    transform: scale(1.2);
+    -webkit-box-shadow: 9px 13px 8px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 13px 8px -6px rgba(0,0,0,0.75);
+    box-shadow: 9px 13px 8px -6px rgba(0,0,0,0.75);
+}
+
+.form{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background: rgb(150,207,241);
+    background: linear-gradient(90deg, rgba(150,207,241,1) 0%, rgba(250,246,166,1) 42%, rgba(247,179,208,1) 100%);
+
+    &__title{
+        color: #fff;
+        text-align: center;
+    }
+
+    &__label{
+        color: #fff;
+    }
+
+    &__input{
+        width: 60%;
+    }
+}
+
+::ng-deep {
+    .mat-form-field .mat-form-field-flex{
+      text-align: center;
+    }
+  }
+
+mat-label{
+    text-align: center;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 0;
+}
+
+.announce{
+    font-size: 75px;
+    font-family: sans-serif;
+}
+button{
+    color: #99bfc7 !important;
+}
+
+mat-card:hover{
+    transform: scale(1.08);
+}
