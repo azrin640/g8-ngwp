@@ -1,0 +1,33 @@
+<div class="content">
+
+  <div class="logo" fxLayout="column" fxLayoutAlign="center center" >
+    <img src="../../assets/images/logo_g8-my.png" alt="logo">
+  </div>
+
+  <div class="menu">
+      <mat-toolbar>  
+        <mat-toolbar-row fxLayout="row" fxLayoutAlign="center center">
+          <div class="menu__item" *ngFor="let menu of menus">
+              <button mat-button  [routerLink]="menu.link">
+                <h3>{{ menu.name }}</h3>
+              </button>
+            </div>
+        </mat-toolbar-row>
+      </mat-toolbar>
+  </div>
+  
+  <router-outlet></router-outlet>
+
+  <div class="footer" fxLayout="column" fxLayoutAlign="end">
+    <div class="footer__social" fxLayout="row" fxLayoutAlign="end">
+      <img class="footer__social-item" src="../../assets/images/facebook.png" alt="">
+      <img class="footer__social-item" src="../../assets/images/instagram.png" alt="">
+      <img class="footer__social-item" src="../../assets/images/whatsapp.png" alt="">
+    </div>
+    <div class="footer__copyright" fxLayout fxLayoutAlign="end">
+      DIURUSKAN OLEH MAJLISKAMI.MY
+    </div>
+  </div>
+</div>
+
+

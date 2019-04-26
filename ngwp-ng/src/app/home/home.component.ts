@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { PostService } from '../services/post-service/post-service.service';
+
+export interface DialogData {
+  name: string;
+  partner: string;
+}
 
 @Component({
   selector: 'app-home',
@@ -9,10 +13,8 @@ import { PostService } from '../services/post-service/post-service.service';
 export class HomeComponent implements OnInit {
 
   constructor(
-    private postService: PostService
   ) { }
 
   ngOnInit() {
   }
-
 }

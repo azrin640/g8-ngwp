@@ -1,0 +1,57 @@
+h1{
+    font-size: 3rem;
+    line-height: 1rem;
+
+}
+
+
+.intro{
+
+    padding: 5vh 5vw 5vh 5vw;
+
+    &__card{
+        padding: 10px;
+    }
+
+    &__card-title{
+        text-align: center;    
+    }
+
+    &__card-logo{
+        width: 200px;
+    }
+
+    &__card-image{
+        width: 180px;
+    }
+
+    &__card-action{
+        margin-bottom: 20px;
+    }
+}
+
+.promotions{
+    padding: 10vh 5vw 10vh 5vw;
+
+    &__title{
+        font-size: 5rem;
+    }
+
+    &__countdown{
+        padding: 10vh 5vw 10vh 5vw;
+    }
+
+    &__countdown-card{
+        font-size: 2rem;
+    }
+
+    &__clock-title{
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    &__clock-subtitle{
+        font-size: 2rem;
+        text-align: center;
+    }
+}

@@ -9,6 +9,17 @@ services:
       - /home/azrin/project/g8/ngwp/ngwp-ng/dist/ngwp-ng:/usr/share/nginx/html
     ports: 
       - "80:80"
+
+  ngwp-mongo:
+    image: mongo
+    restart: always
+    volumes:
+      - /home/azrin/project/g8/ngwp/ngwp-mongo:/etc/mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ngwpadmin
+      MONGO_INITDB_ROOT_PASSWORD: Engine1
+    ports:
+      - "27017:27017"
   
   ngwp-wp:
     image: wordpress:latest

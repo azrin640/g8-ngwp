@@ -1,0 +1,104 @@
+<div class="content">
+
+  <div class="title" fxLayout="row start" fxLayoutAlign=" center">
+    <button mat-mini-fab color="accent" (click)="openSideMenu(opened)">
+      <mat-icon *ngIf="opened">keyboard_arrow_left</mat-icon>
+      <mat-icon *ngIf="!opened">keyboard_arrow_right</mat-icon>
+    </button>
+    <h2 class="title__title">{{ title }}</h2>
+    
+  </div>
+
+  <mat-drawer-container class="product__card mat-elevation-z8" >
+
+    <mat-drawer mode="side" [opened]="opened">
+      <mat-list>
+
+        <mat-list-item>
+          <button class="category__button" mat-button>Product Categories</button>
+        </mat-list-item>
+
+        <mat-divider></mat-divider>
+
+        <mat-list-item *ngFor="let category of categories" >
+            <button class="category__button" mat-button matBadge="{{ category.count }}" matBadgeColor="accent" (click)="filterProducts(category.id)" (click)="openSideMenu(opened)">
+              {{ category.name }}
+            </button>          
+        </mat-list-item>
+
+      </mat-list>      
+    </mat-drawer>
+
+    <mat-drawer-content>
+      <div class="products" *ngIf="products">
+        <div class="products" fxLayout="row wrap" fxLayoutAlign="center stretch" fxLayoutGap="10px">
+          <div class="product" *ngFor="let product of products" >
+              <mat-card class="product__card mat-elevation-z8" fxFlex="200px" fxLayout="column" fxLayoutAlign="space-between stretch">
+
+                <img mat-card-image src="{{ product.images[0].src }}" alt="">
+
+                <mat-card-title-group>
+                  <mat-card-title>
+                    {{ product.name }}
+                     </mat-card-title>
+                  <mat-card-subtitle> 
+                    <div class="product__subtitle" fxLayout="column" fxLayoutAlign="center center">
+                      <div class="product__fav" *ngIf="product.rating_count">
+                        Favorites <mat-icon matBadge="{{ product.rating_count }}" color="primary" matBadgeColor="accent">favorite</mat-icon> 
+                      </div>
+                      <div class="product__sale" *ngIf="product.on_sale">
+                        <p>On Sale <mat-icon color="accent">money_off</mat-icon> {{ ((product.regular_price - product.sale_price) / product.regular_price) | percent}} off</p>
+                      </div>
+                    </div>                                   
+                  </mat-card-subtitle>                  
+                </mat-card-title-group>
+                <mat-card-content>
+                  <div class="product__short-description" [innerHTML]="product.short_description"></div>
+                </mat-card-content>               
+                
+                <mat-card-footer class="product__footer">  
+                  <div class="product__tags" *ngIf="product.tags" fxLayout="row wrap" fxLayoutAlign="center center">                    
+                    <mat-chip-list *ngFor="let tag of product.tags" >
+                      <div class="product__tag">
+                        <mat-chip color="primary" selected><em>{{ tag.name }}</em></mat-chip>
+                      </div>                        
+                    </mat-chip-list>
+                  </div>    
+                  <div class="product__price" >
+                    <div class="product__price-no-sale" *ngIf="!product.on_sale" fxLayout="row" fxLayoutAlign="center" >
+                      <p><mat-icon color="primary">monetization_on</mat-icon>{{ product.regular_price | currency: "RM"}}</p>
+                    </div>
+                    <div class="product__price-no-sale" *ngIf="product.on_sale" fxLayout="row" fxLayoutAlign="center" fxLayoutGap="10px">
+                        <p><mat-icon color="primary">monetization_on</mat-icon><span class="product__price-cross">{{ product.regular_price | currency: "RM"}}</span></p>
+                        <p><mat-icon color="accent">monetization_on</mat-icon>{{ product.sale_price | currency: "RM"}}</p>
+                    </div>
+
+                  </div>              
+                  <mat-card-actions>
+                    <div class="product__actions" fxLayout="row" fxLayoutAlign="center">
+                      <button fxFlex="50" mat-icon-button color="accent" (click)="favoriteProduct(product.id)">
+                        <mat-icon>favorite_border</mat-icon>
+                      </button>
+                      <button fxFlex="50" mat-icon-button color="accent" (click)=addProduct(product.id)>
+                        <mat-icon>shopping_cart</mat-icon>
+                      </button>
+                    </div>
+                  </mat-card-actions> 
+                                   
+                </mat-card-footer>
+                
+
+              </mat-card>
+          </div>
+        </div>
+      </div>
+
+    </mat-drawer-content>
+
+  </mat-drawer-container>
+
+  
+
+</div>
+
+

@@ -1,9 +1,0 @@
-@import '../../shared/_variables.scss';
-
-:host {
-	flex: 1;
-
-	@media ($mat-xsmall) {
-		width: 100%;
-	}
-}

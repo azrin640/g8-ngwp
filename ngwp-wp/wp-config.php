@@ -47,7 +47,7 @@ define( 'DB_COLLATE', '');
  * @since 2.6.0
  */
 define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+define( 'SECURE_AUTH_KEY',  'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTYxMzQxODQsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDo4MDAwIiwiZXhwIjoiMTJcLzMxXC8yMDE5LCAxMjo1OSArMDgwMCIsImp0aSI6ImYyY2Y2YzlmLTQyYzQtNGM2Yi05YmU3LWE2YTcxNGFlNWVkMCIsInVzZXJJZCI6MTUsInJldm9jYWJsZSI6dHJ1ZSwicmVmcmVzaGFibGUiOnRydWV9.9MpdNnMpXHbU3fOWCLQU0qTZd27N60tXl-AI061nAEo' );
 define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
 define( 'NONCE_KEY',        'put your unique phrase here' );
 define( 'AUTH_SALT',        'put your unique phrase here' );

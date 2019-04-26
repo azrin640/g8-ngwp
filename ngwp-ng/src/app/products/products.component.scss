@@ -1,0 +1,47 @@
+.title{
+
+    &__title{
+        margin-left: 10px;
+    }    
+}
+
+.content{
+    padding: 10px;
+}
+
+
+mat-drawer{
+    width: 170px;
+}
+
+.category{
+
+    &__button{
+        width: 100%;
+        text-align: center;
+    }
+}
+.product{
+    margin: 10px;
+
+    &__subtitle{
+        text-align: center;
+    }
+
+    &__sale{
+        color: #ff4081;
+        text-align: center;
+    }
+    &__tag{
+        margin: 5px;
+    }
+
+    &__footer{
+        bottom: 0;
+    }
+
+    &__price-cross{
+        text-decoration: line-through;
+    }
+}
+

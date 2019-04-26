@@ -1,0 +1,31 @@
+<div class="content">
+  <div class="test" fxLayout="row" fxLayoutAlign="center center">
+    <div class="test__form" fxFlex="60">
+
+      <form [formGroup]="form" #formInput>
+        <h2 style="text-align: center">Jom cuba e-card kami</h2>
+        <div class="test__form-container" fxLayout="row">
+          <div class="test__form-name" fxFlex="50" fxLayout="column" fxLayoutAlign="center center" >
+              <h3 style="text-align: center">Nama Anda</h3>  
+              <input class="test__input" name="name" matInput [formControl]="form.get('name')" type="text" > 
+          </div>
+          <div class="test__form-name" fxFlex="50" fxLayout="column" fxLayoutAlign="center center" >
+              <h3 style="text-align: center">Nama Pasangan Anda</h3>  
+              <input class="test__input" name="partner" matInput [formControl]="form.get('partner')" type="text" > 
+          </div>
+        </div>
+      </form>
+
+      <h2 style="text-align: center">Menjemput Anda ke</h2>
+      <h1 style="text-align: center; font-size: 5em;">majlis kami</h1>
+      <div class="test__button" fxLayout fxLayoutAlign="center center">
+        <button mat-raised-button color="accent" (click)="onSubmit()">PREVIEW</button>
+      </div>
+      
+
+    </div>
+    <div class="test__img" fxFlex="40" fxLayout fxLayoutAlign="center center"> 
+        <img src="../../assets/images/phone_big.png" alt="">
+    </div>
+  </div>
+</div>

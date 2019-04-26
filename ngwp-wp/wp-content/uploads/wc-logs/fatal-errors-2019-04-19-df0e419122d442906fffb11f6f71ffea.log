@@ -1,0 +1,50 @@
+2019-04-19T08:21:04+00:00 CRITICAL syntax error, unexpected '.' in /var/www/html/wp-content/aam/extension/social-login/vendor/Provider/Google.php on line 28
+
+2019-04-19T08:22:19+00:00 CRITICAL Uncaught Error: Class 'Hybridauth\Provider\Hybridauth\HttpClient\Util' not found in /var/www/html/wp-content/aam/extension/social-login/vendor/Provider/Google.php:21
+Stack trace:
+#0 /var/www/html/wp-content/aam/extension/social-login/vendor/autoload.php(50): require()
+#1 [internal function]: AAM_Extension_Repository->{closure}('Hybridauth\\Prov...')
+#2 /var/www/html/wp-content/aam/extension/social-login/vendor/Hybridauth.php(123): spl_autoload_call('Hybridauth\\Prov...')
+#3 /var/www/html/wp-content/aam/extension/social-login/vendor/Hybridauth.php(101): Hybridauth\Hybridauth->getAdapter('Google')
+#4 /var/www/html/wp-content/aam/extension/social-login/SocialLogin.php(103): Hybridauth\Hybridauth->authenticate('Google')
+#5 /var/www/html/wp-includes/class-wp-hook.php(286): AAM_SocialLogin->trigger(Object(WP))
+#6 /var/www/html/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 /var/www/html/wp-includes/plugin.php(531): WP_Hook->do_action(Array)
+#8 /var/www/html/wp-includes/class-wp.php(750): d in /var/www/html/wp-content/aam/extension/social-login/vendor/Provider/Google.php on line 21
+
+2019-04-19T08:24:05+00:00 CRITICAL Uncaught Error: Class 'Hybridauth\Provider\Hybridauth\HttpClient\Util' not found in /var/www/html/wp-content/aam/extension/social-login/vendor/Provider/Google.php:21
+Stack trace:
+#0 /var/www/html/wp-content/aam/extension/social-login/vendor/autoload.php(50): require()
+#1 [internal function]: AAM_Extension_Repository->{closure}('Hybridauth\\Prov...')
+#2 /var/www/html/wp-content/aam/extension/social-login/vendor/Hybridauth.php(123): spl_autoload_call('Hybridauth\\Prov...')
+#3 /var/www/html/wp-content/aam/extension/social-login/vendor/Hybridauth.php(101): Hybridauth\Hybridauth->getAdapter('Google')
+#4 /var/www/html/wp-content/aam/extension/social-login/SocialLogin.php(103): Hybridauth\Hybridauth->authenticate('Google')
+#5 /var/www/html/wp-includes/class-wp-hook.php(286): AAM_SocialLogin->trigger(Object(WP))
+#6 /var/www/html/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 /var/www/html/wp-includes/plugin.php(531): WP_Hook->do_action(Array)
+#8 /var/www/html/wp-includes/class-wp.php(750): d in /var/www/html/wp-content/aam/extension/social-login/vendor/Provider/Google.php on line 21
+
+2019-04-19T08:25:43+00:00 CRITICAL Uncaught Error: Class 'Hybridauth\Provider\Hybridauth\Provider\Google' not found in /var/www/html/wp-content/aam/extension/social-login/vendor/Provider/Google.php:33
+Stack trace:
+#0 /var/www/html/wp-content/aam/extension/social-login/vendor/autoload.php(50): require()
+#1 [internal function]: AAM_Extension_Repository->{closure}('Hybridauth\\Prov...')
+#2 /var/www/html/wp-content/aam/extension/social-login/vendor/Hybridauth.php(123): spl_autoload_call('Hybridauth\\Prov...')
+#3 /var/www/html/wp-content/aam/extension/social-login/vendor/Hybridauth.php(101): Hybridauth\Hybridauth->getAdapter('Google')
+#4 /var/www/html/wp-content/aam/extension/social-login/SocialLogin.php(103): Hybridauth\Hybridauth->authenticate('Google')
+#5 /var/www/html/wp-includes/class-wp-hook.php(286): AAM_SocialLogin->trigger(Object(WP))
+#6 /var/www/html/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 /var/www/html/wp-includes/plugin.php(531): WP_Hook->do_action(Array)
+#8 /var/www/html/wp-includes/class-wp.php(750): d in /var/www/html/wp-content/aam/extension/social-login/vendor/Provider/Google.php on line 33
+
+2019-04-19T08:25:47+00:00 CRITICAL Uncaught Error: Class 'Hybridauth\Provider\Hybridauth\Provider\Google' not found in /var/www/html/wp-content/aam/extension/social-login/vendor/Provider/Google.php:33
+Stack trace:
+#0 /var/www/html/wp-content/aam/extension/social-login/vendor/autoload.php(50): require()
+#1 [internal function]: AAM_Extension_Repository->{closure}('Hybridauth\\Prov...')
+#2 /var/www/html/wp-content/aam/extension/social-login/vendor/Hybridauth.php(123): spl_autoload_call('Hybridauth\\Prov...')
+#3 /var/www/html/wp-content/aam/extension/social-login/vendor/Hybridauth.php(101): Hybridauth\Hybridauth->getAdapter('Google')
+#4 /var/www/html/wp-content/aam/extension/social-login/SocialLogin.php(103): Hybridauth\Hybridauth->authenticate('Google')
+#5 /var/www/html/wp-includes/class-wp-hook.php(286): AAM_SocialLogin->trigger(Object(WP))
+#6 /var/www/html/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 /var/www/html/wp-includes/plugin.php(531): WP_Hook->do_action(Array)
+#8 /var/www/html/wp-includes/class-wp.php(750): d in /var/www/html/wp-content/aam/extension/social-login/vendor/Provider/Google.php on line 33
+

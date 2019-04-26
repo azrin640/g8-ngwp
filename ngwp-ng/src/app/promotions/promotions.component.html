@@ -1,0 +1,95 @@
+<div class="content">
+
+  <div class="banner">
+    <img src="../../assets/images/banner.png" alt="">
+  </div>
+
+  <div class="intro" fxLayout="column" fxLayoutAlign="center center">
+    <h1>Sebab Apa Saya Gunakan</h1>
+    <h1>Kad Undangan Digital?</h1>
+    <div class="intro__blurps" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="20px">
+
+      <div class="intro__card-container" fxFlex="30%">
+        <mat-card class="intro__card mat-elevation-z8"  fxLayout="column" fxLayoutAlign="center center">
+          <mat-card-title class="intro__card-title">
+              Saya tak nak tetamu yang nak datang tersesat ke
+          </mat-card-title>
+          <img class="intro__card-logo" mat-card-image src="../../assets/images/majlis-kami.png" alt="Majlis Kami">
+          <img class="intro__card-image" mat-card-image src="../../assets/images/hp.png" alt="hp">
+        
+          <mat-card-actions class="intro__card-action"><button  mat-raised-button color="accent">video lokasi</button></mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="intro__card-container" fxFlex="30%">
+        <mat-card class="intro__card mat-elevation-z8"  fxLayout="column" fxLayoutAlign="center center">
+          <mat-card-title class="intro__card-title">
+              Tetamu saya boleh terus call untuk dapatkan info tentang
+          </mat-card-title>
+          <img class="intro__card-logo" mat-card-image src="../../assets/images/majlis-kami.png" alt="Majlis Kami">
+          <img class="intro__card-image" mat-card-image src="../../assets/images/hp.png" alt="hp">
+        
+          <mat-card-actions class="intro__card-action"><button  mat-raised-button color="accent">video call</button></mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="intro__card-container" fxFlex="30%">
+        <mat-card class="intro__card mat-elevation-z8"  fxLayout="column" fxLayoutAlign="center center">
+          <mat-card-title class="intro__card-title">
+              Simpan terus dalam kalendar. Saya tak nak tetamu terlupa
+          </mat-card-title>
+          <img class="intro__card-logo" mat-card-image src="../../assets/images/majlis-kami.png" alt="Majlis Kami">
+          <img class="intro__card-image" mat-card-image src="../../assets/images/hp.png" alt="hp">
+        
+          <mat-card-actions class="intro__card-action"><button  mat-raised-button color="accent">video calendar</button></mat-card-actions>
+        </mat-card>
+      </div>
+
+    </div>
+    <h1>Mudah Sangat Dengan</h1>
+    <img src="../../assets/images/logo-majlis-kami.png" class="intro__footer" alt="">
+  </div>
+
+  <div class="tester" id="tester">
+    <app-tester></app-tester>
+  </div>
+
+  <div class="promotions" fxLayout="column" fxLayoutAlign="center center">
+    <h1>Dapatkan <span class="promotions__title">PROMOSI TERHAD</span></h1>
+    <h1><span class="promotions__title">Majlis Kami</span> Sekarang</h1>
+    <img src="../../assets/images/flash-sale.png" alt="">
+    <div class="promotions__countdown" fxLayout="row" fxLayoutAlign="center center"> 
+        <div class="" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="10px">
+          <mat-card class="promotions__countdown-card mat-elevation-z8">
+            <mat-card-title>
+              <span class="promotions__clock-title">{{ hours | async}} </span>
+            </mat-card-title>
+            <mat-card-subtitle>
+              <span class="promotions__clock-subtitle">hours</span>
+            </mat-card-subtitle>
+            </mat-card>
+          <mat-card class="promotions__countdown-card mat-elevation-z8">
+            <mat-card-title>
+              <span class="promotions__clock-title">{{ minutes | async }}</span>
+            </mat-card-title>
+            <mat-card-subtitle>
+              <span class="promotions__clock-subtitle">minutes</span>
+            </mat-card-subtitle>
+          </mat-card>
+          <mat-card class="promotions__countdown-card mat-elevation-z8">
+            <mat-card-title>
+              <span class="promotions__clock-title">{{ seconds| async }}</span>
+            </mat-card-title>
+            <mat-card-subtitle>
+              <span class="promotions__clock-subtitle">seconds</span>
+            </mat-card-subtitle>
+          </mat-card>
+        </div>             
+    </div>
+    <div class="promotions__cta" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="10px">
+      <button mat-raised-button color="accent" routerLink="/products">Buy Now</button>
+      <button mat-raised-button color="primary" routerLink="#tester">Preview</button>
+    </div>
+  </div>
+
+</div>
