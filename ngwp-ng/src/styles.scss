@@ -2,6 +2,14 @@
 
 html, body { 
     height: 100%; 
+    overflow: auto;
+}
+body { 
+    margin: 0; 
+    font-family: Roboto, 
+    "Helvetica Neue", sans-serif; 
+}
+
+.content{
     overflow: hidden;
 }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
