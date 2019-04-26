@@ -6,7 +6,7 @@ services:
     networks: 
       - frontend
     volumes:
-      - /home/azrin/project/g8/ngwp/ngwp-ng/dist/ngwp-ng:/usr/share/nginx/html
+      - /opt/g8-ngwp/ngwp-ng/dist/ngwp-ng:/usr/share/nginx/html
     ports: 
       - "80:80"
 
@@ -14,7 +14,7 @@ services:
     image: mongo
     restart: always
     volumes:
-      - /home/azrin/project/g8/ngwp/ngwp-mongo:/etc/mongo
+      - /opt/g8-ngwp/ngwp-mongo:/etc/mongo
     environment:
       MONGO_INITDB_ROOT_USERNAME: ngwpadmin
       MONGO_INITDB_ROOT_PASSWORD: Engine1
@@ -28,7 +28,7 @@ services:
     depends_on:
       - ngwp-mysql
     volumes: 
-       - /home/azrin/project/g8/ngwp/ngwp-wp:/var/www/html
+       - /opt/g8-ngwp/ngwp-wp:/var/www/html
     restart: always
     ports: 
       - "8000:80"  
@@ -41,7 +41,7 @@ services:
   ngwp-mysql:
     image: mysql:5.7
     volumes: 
-      - /home/azrin/project/g8/ngwp/ngwp-mysql:/var/lib/mysql
+      - /opt/g8-ngwp/ngwp-mysql:/var/lib/mysql
     networks: 
       - backend
     restart: always    
